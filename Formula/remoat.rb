@@ -1,8 +1,8 @@
 class Remoat < Formula
   desc "Control your AI coding assistant from anywhere — right from Telegram"
   homepage "https://github.com/optimistengineer/Remoat"
-  url "https://registry.npmjs.org/remoat/-/remoat-0.2.8.tgz"
-  sha256 "1bc208775f8281fd41b0173dfcf868e955ea4abb49b18324ce0fac89447afbb6"
+  url "https://registry.npmjs.org/remoat/-/remoat-0.2.9.tgz"
+  sha256 "49299fcb050d4e20963671bf1e4d0ea83e1c2e6d7a7009a51f22829b1b87371c"
   license "MIT"
 
   depends_on "node"
