@@ -12,6 +12,11 @@ class Remoat < Formula
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
+  def post_install
+    # Rebuild native addons (better-sqlite3) against the user's Node version
+    system "npm", "rebuild", "better-sqlite3", "--prefix", libexec
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/remoat --version")
   end
